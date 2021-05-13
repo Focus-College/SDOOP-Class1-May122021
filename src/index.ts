@@ -1,4 +1,1 @@
-import { hello } from "./hello";
-
-const message = hello();
-console.log(message);
+console.log("Hello World");
