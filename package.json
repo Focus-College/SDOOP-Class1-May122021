@@ -8,9 +8,8 @@
     "prestart:dev": "npm run build",
     "start:dev": "npm run start",
     "start:dev:notest": "npm run build:compile && npm run start",
-    "build": "npm run build:lint && npm run build:prettier && npm run test && npm run build:compile",
+    "build": "npm run build:lint && npm run test && npm run build:compile",
     "build:lint": "eslint {tests,src}/**/*.ts --ext .ts --fix",
-    "build:prettier": "prettier --write {tests,src}/**/*.ts",
     "build:compile": "tsc",
     "test": "nyc mocha -r ts-node/register tests/**/*.spec.ts"
   },
@@ -26,7 +25,6 @@
     "eslint": "^7.9.0",
     "mocha": "^8.1.3",
     "nyc": "^15.1.0",
-    "prettier": "2.1.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   }
